@@ -1,0 +1,81 @@
+$highlight: orange;
+
+
+
+table {
+    border: 1px solid black;
+    width: 100%;
+    margin: 10px;
+
+    td {
+        background-color: deepskyblue;
+        padding: 10px;
+
+    }
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+    margin: 20px;
+
+}
+
+
+
+
+a:hover {
+    background-color: $highlight;
+
+}
+
+ul {
+    background-color: lightblue;
+}
+
+
+li {
+    padding: 20px;
+
+}
+
+
+img {
+    width: 500px;
+}
+
+.intro {
+    text-align: center;
+    font-size: xx-large;
+    padding: 30px;
+}
+
+
+.intro + .intro {
+    color: $highlight;
+}
+
+
+
+#fav {
+    border: 10px solid $highlight;
+}
+
+
+#superFav {
+    @extend #fav;
+    border-width: 30px;
+    border-style: dotted;
+}
+
+@media only screen and (max-width: 800px) {
+    .congrat {
+        display: none;
+    }
+}
